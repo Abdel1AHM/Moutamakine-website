@@ -92,8 +92,8 @@
 
                 <div class="footer-col">
                     <h3>Contacts</h3>
-                    <li>Call & Text: +212701-276858</li>
-                    <li>Email: moutamakine.contact@gmail.com</li>
+                    <li onclick="window.location.href='contact.html'">Call & Text </li>
+                    <li onclick="window.location.href='contact.html'">Our Email</li>
                     
                 </div>
 
@@ -124,28 +124,8 @@
                 </div>
                 
              </footer>
-             <script>
-                function sendMessage(){
-                    (function(){
-                        emailjs.init("WkX-wiwj3rnNT_dLO")
-                    })
-                    var serviceId = 'service_ipzmjbm';
-                    var templateId='template_ddw1h0j';
-                    var params ={
-                        sendername : document.querySelector('#name').value,
-                        senderemail :document.querySelector('#email').value,
-                        subject :document.querySelector('#subject').value,
-                        message :document.querySelector('#message').value,
-                    };
-                    emailjs.send(seviceId + temlateId + params).then(res =>{
-                        alert("thank you ," + params[sendername] + "your message has been sent !")
-                    })
-                    .catch();
+           
 
-                 
-                }
-             </script>
-
-               
+<script src="java.js" defer></script>
                 
 </body>
