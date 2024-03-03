@@ -1,21 +1,33 @@
+document.addEventListener('DOMContentLoaded', function(){
+    var imageHome = document.getElementById('imageHome');
+    imageHome.addEventListener('click',function(){
+        window.location.href = "http://127.0.0.1:5500/index.html"
+    });
+})
 
 
-function sendMessage() {
-    emailjs.init("WkX-wiwj3rnNT_dLO");
 
-    var serviceId = 'service_ipzmjbm';
-    var templateId = 'template_ddw1h0j';
-    var params = {
-        sendername: document.querySelector('#name').value,
-        senderemail: document.querySelector('#email').value,
-        subject: document.querySelector('#subject').value,
-        message: document.querySelector('#message').value,
-    };
+/*Social media linking*/
+document.addEventListener('DOMContentLoaded', function(){
+    var facebookIcon = document.getElementById('facebookIcon');
+    var instagramIcon =document.getElementById('instagramIcon');
+    var linkedinIcon =document.getElementById('linedinIcon');
+    facebookIcon.addEventListener('click' ,function(){
+        window.location.href = "https://www.facebook.com/moutamakine/"
+    });
+    instagramIcon.addEventListener('click' ,function(){
+        window.location.href = "https://www.instagram.com/moutamakine_official/"
+    });
+    linkedinIcon.addEventListener('click' ,function(){
+        window.location.href = "https://www.linkedin.com/company/moutamakine-clsf/?trk=public_profile_experience-item_profile-section-card_subtitle-click&originalSubdomain=ma"
+    });
 
-    emailjs.send(serviceId, templateId, params)
-        .then(res => {
-            alert("Thank you, " + params.sendername + "! Your message has been sent.");
-        })
-        .catch();
-}
+})
 
+
+/* Submit form  */
+var btn = document.getElementById('btn');
+    btn.addEventListener('click' ,function(e){
+        e.preventDefault()
+        alert('thank you for your message !');
+    })
