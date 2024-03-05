@@ -33,9 +33,24 @@
               <section id="course">
                 <h1>Our Popular Courses</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quo quia, corru </p>
+                
+                <div class="lang"> 
+
+                    <ul class ="lang-choi">
+
+                        <li class="active" data-cat=".all">All languages</li>
+                        <li data-cat=".german">German</li>
+                        <li data-cat=".frensh">Frensh</li>
+                        <li data-cat=".english">English</li>
+                        <li data-cat=".russian">Russian</li>
+                        <li data-cat=".italien">Italien</li>
+
+                    </ul> 
+                </div>
+
                 <div class="course-box">
 
-                    <div onclick="window.location.href='course-inner.HTML'" class="courses">
+                    <div onclick="window.location.href='course-inner.HTML'" class="courses all german">
 
                         <img src="https://img.freepik.com/photos-premium/style-femme-blonde-assise-table-livres-drapeau-
                         allemagne-jaune_87910-6707.jpg?w=740" alt="women with german flag">
@@ -56,7 +71,7 @@
                         </div>
 
                     </div>
-                    <div onclick="window.location.href='course-inner.HTML'"class="courses">
+                    <div onclick="window.location.href='course-inner.HTML'"class="courses all italien">
 
                         <img src="https://img.freepik.com/photos-premium/portrait-gros-plan-etudiante-souriante-tenant-petit-drapeau-italien-isole-fond-gris_101969-2138.jpg?w=740">
                         <div class="details">
@@ -76,7 +91,7 @@
                         </div>
                         
                     </div>
-                    <div onclick="window.location.href='course-inner.HTML'"class="courses">
+                    <div onclick="window.location.href='course-inner.HTML'"class="courses all russian">
 
                         <img src="https://img.freepik.com/photos-gratuite/ge-moyen-belle-femme-touristique-tenant-drapeau-russe-fond-blanc-isole-effraye-etonne-bouche-ouverte-pour-visage-incredulite-surprise_839833-20678.jpg?t=st=1709152978~exp=1709156578~hmac=32c446ce5edadbe3c0d2489b245a0b93852b20f068e50c6229784da59b75945f&w=740">
                         <div class="details">
@@ -96,7 +111,7 @@
                         </div>
                         
                     </div>
-                    <div  onclick="window.location.href='course-inner.HTML'"class="courses">
+                    <div  onclick="window.location.href='course-inner.HTML'"class="courses all frensh">
 
                         <img src="https://img.freepik.com/photos-premium/belle-femme-veste-style-chapeau-drapeau-francais-mur-vert_87910-10293.jpg?w=740">
                         <div class="details">
@@ -116,7 +131,7 @@
                         </div>
                         
                     </div>
-                    <div onclick="window.location.href='course-inner.HTML'"class="courses">
+                    <div onclick="window.location.href='course-inner.HTML'"class="courses all english">
 
                         <img src="https://img.freepik.com/photos-premium/parlez-vous-du-texte-anglais-carte_188078-4175.jpg?w=740">
                         <div class="details">
@@ -136,7 +151,7 @@
                         </div>
                         
                     </div>
-                    <div onclick="window.location.href='course-inner.HTML'"class="courses">
+                    <div onclick="window.location.href='course-inner.HTML'"class="courses all german">
 
                         <img src="https://img.freepik.com/photos-gratuite/vue-frontale-smiley-tenue-femme-drapeau-allemand_23-2148935487.jpg?t=st=1709153711~exp=1709157311~hmac=5fa282a4eade513403bfef1858cfc4bb74ce5836307d3024120f842473e9f1b9&w=740">
                         <div class="details">
@@ -197,14 +212,16 @@
                 <div class="copyright">
                     <p>© 2024 Moutamakine. All Rights Reserved.</p>
                     <div class="pro-links">
-                        <i class="fab fa-facebook-f" id="facebookIcon"></i>
-                        <i class="fab fa-instagram" id="instagramIcon"></i>
-                        <i class="fab fa-linkedin-in" id="linedinIcon"></i>
+                        <a href="https://www.facebook.com/moutamakine/" target="_blank"><i class="fab fa-facebook-f" id="facebookIcon"></i></a>
+                        <a href="https://https://www.instagram.com/moutamakine_clsf/" target="_blank"><i class="fab fa-instagram" id="instagramIcon"></i></a>
+                        <a href="https://www.linkedin.com/company/moutamakine-clsf/?trk=public_profile_experience-item_profile-section-card_subtitle-click&originalSubdomain=ma" 
+                        target="_blank"><i class="fab fa-linkedin" id="linkedinIcon"></i></a>
                     </div>
                 </div>
                 
              </footer>
 
              <script src="java.js" defer></script>
+             <script src="switcher.js" defer></script>
                 
 </body>

@@ -208,6 +208,11 @@ h1 {
     text-align: center;
     
   }
+  #course p{
+    font-size: 1rem;
+    font-weight: 450;
+    margin-top: 10px;
+  }
 
   #course .course-box{
     display: grid;
@@ -336,6 +341,12 @@ h1 {
   #teachers{
     padding: 8vw 8vw 8vw 8vw;
     text-align: center;
+  }
+
+  #teachers p{
+    font-size: 1rem;
+    font-weight: 450;
+    margin-top: 10px;
   }
 
   #teachers .tea-box{
@@ -484,7 +495,7 @@ h1 {
   
     footer .copyright .pro-links i{
       padding: 10px 10px;
-      border: 1px solid #6d3df1;
+      border: 1px solid white;
       border-radius: 2px ;
       cursor: pointer;
       background-color: white;
@@ -962,6 +973,36 @@ h1 {
       height: 100%;
     }
 
+
+    /* languge choice */
+    .lang-choi {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 150px;
+      margin-top: 30px;
+  }
+  
+  .lang-choi li {
+     font-size: 0.9rem;
+     font-weight: 600;
+      cursor: pointer;
+      padding: 9px;
+      border: 1px solid #b9b9b9;
+      border-radius: 5px;
+      transition:  0.5s ease;
+  }
+  .lang-choi li:hover{
+    background-color: #002770;
+    color: white;
+  }
+  
+  .lang-choi li.active {
+      background-color: #FDC93B;
+      color: #f7f6fa ;
+  }
+  
 
 
   
